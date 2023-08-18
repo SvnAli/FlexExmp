@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flex Gallery - 2</title>
+
+    <style>
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery div {
+            flex-grow: 1;
+            margin: 3px;
+            overflow: hidden;
+        }
+
+        div img {
+            width: 100%;
+            transition: transform .3s ease-in-out;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>İmage Gallery</h1>
+
+    <div class="gallery">
+        <div>
+            <img src="https://picsum.photos/300/300?random=1">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=2">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=3">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=4">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=5">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=6">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=7">
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=8">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
